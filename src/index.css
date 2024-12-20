@@ -1,0 +1,64 @@
+@import "./assets/fonts/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors for dark mode  */
+/* #dddee0 */
+/* primary color : #0a0a23 */
+/* secondary color : #313146*/
+/* tertiary color : #0088cc */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #ebf2fa;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+li {
+  font-weight: 400;
+}
+
+table {
+  font-weight: 400;
+}
+
+th,
+td {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-weight: 400;
+}

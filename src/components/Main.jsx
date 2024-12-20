@@ -1,0 +1,62 @@
+import React from 'react'
+import ShuaibPic from "../assets/shuaib.jpeg";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { VscGithub } from "react-icons/vsc";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoDownloadOutline } from "react-icons/io5";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+
+
+
+const Main = ({darkMode}) => {
+  return (
+    <main className={` rounded-lg w-[350px] px-[30px] ${darkMode ? "bg-dark-blue" : "bg-white"}`}>
+        <div className='flex flex-col items-center justify-center mt-[-40px]'>
+        <img src={ShuaibPic} alt="Shuaib Pic" className='w-[120px] rounded-lg ' />  
+        <h1 className={`text-[0B0909] text-[22px] font-semibold mt-[5px] ${darkMode?"text-white":"text-[0B0909]"}`}>Shuaib Khan</h1>    
+        <span className={` ${darkMode?"text-light-gray":"text-gray-700"}`}>Full Stack Web Developer</span> 
+
+        <div className='flex gap-[10px] mt-[10px]'>
+            <a href="" className={` flex justify-center items-center text-[#1877F2]  rounded-md w-[40px] h-[40px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}><FaFacebookF /></a>
+            <a href="" className={` flex justify-center items-center text-[#1877F2] rounded-md w-[40px] h-[40px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}><FaLinkedinIn /></a>
+            <a href="" className={` flex justify-center items-center text-[#1877F2] rounded-md w-[40px] h-[40px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}><VscGithub /></a>
+            <a href="" className={` flex justify-center items-center text-[#1877F2] rounded-md w-[40px] h-[40px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}><FaWhatsapp /></a>
+        </div>
+
+        <div className={` rounded-lg w-full mt-[20px] px-[10px] py-[20px] mb-[20px]${darkMode ? "bg-[#21222A]" : "bg-[#EBF2FA]"} `}>
+<div className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${darkMode ? "border-[#282D35]" : ""}`}>
+    <span className={`text-[#1877F2] text-[22px] ${darkMode ? "text-gray-medium":""}`}><IoPhonePortraitOutline /></span>
+    <div className='flex flex-col'>
+        <span className={`text-gray-700 text-[14px] ${darkMode ? "text-light-gray":""}`}>phone</span>
+        <span className={`${darkMode ? "text-light-gray":""} font-semibold text-[14px]`}>03481921015</span>
+    </div>
+</div>
+<div className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${darkMode ? "border-[#282D35]" : ""}`}>
+    <span className={`text-[#1877F2] text-[22px] ${darkMode ? "text-gray-medium":""}`}><MdOutlineMarkEmailUnread /></span>
+    <div className='flex flex-col'>
+        <span className={`text-gray-700 text-[14px] ${darkMode ? "text-light-gray":""}`}>Email</span>
+        <span className={`${darkMode ? "text-light-gray":""} font-semibold text-[14px]`}>skhan.csit@gmail.com</span>
+    </div>
+</div>
+<div className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${darkMode ? "border-[#282D35]" : ""}`}>
+    <span className={`text-[#1877F2] text-[22px] ${darkMode ? "text-gray-medium":""}`}><CiLocationArrow1 /></span>
+    <div className='flex flex-col '>
+        <span className={`text-gray-700 text-[14px] ${darkMode ? "text-light-gray":""}`}>Location</span>
+        <span className={`${darkMode ? "text-light-gray":""} font-semibold text-[14px]`}>Swat, KPK, Pakistan</span>
+    </div>
+</div>
+<div className='py-[10px] flex justify-center items-center mt-[10px]'>
+    <button className={`flex text-[15px] gap-[5px] items-center justify-center bg-[#1877F2] text-white rounded-full py-[10px] px-[14px] ${darkMode? "bg-dark-gray" : ""} `}> <span className={`text-[20px] text-gray-medium`}><IoDownloadOutline /></span> Download Resume</button>
+</div>
+        </div>
+        </div>
+
+        
+    </main>
+  )
+}
+
+export default Main

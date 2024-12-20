@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "image": "projectImage1.jpg",
+      "previewLink": "https://portfolio-example.com",
+      "githubLink": "https://github.com/user/portfolio-website",
+      "type": "React"
+    },
+    {
+      "id": 2,
+      "title": "E-commerce Store",
+      "image": "projectImage2.jpg",
+      "previewLink": "https://ecommerce-example.com",
+      "githubLink": "https://github.com/user/ecommerce-store",
+      "type": "WordPress"
+    },
+    {
+      "id": 3,
+      "title": "Landing Page",
+      "image": "projectImage3.jpg",
+      "previewLink": "https://landing-page-example.com",
+      "githubLink": "https://github.com/user/landing-page",
+      "type": "HTMLCSS"
+    },
+    {
+      "id": 4,
+      "title": "Blog Platform",
+      "image": "projectImage4.jpg",
+      "previewLink": "https://blog-platform-example.com",
+      "githubLink": "https://github.com/user/blog-platform",
+      "type": "React"
+    },
+    {
+      "id": 5,
+      "title": "Company Website",
+      "image": "projectImage5.jpg",
+      "previewLink": "https://company-example.com",
+      "githubLink": "https://github.com/user/company-website",
+      "type": "WordPress"
+    },
+    {
+      "id": 6,
+      "title": "Admin Dashboard",
+      "image": "projectImage6.jpg",
+      "previewLink": "https://dashboard-example.com",
+      "githubLink": "https://github.com/user/admin-dashboard",
+      "type": "React"
+    },
+    {
+      "id": 7,
+      "title": "Restaurant Website",
+      "image": "projectImage7.jpg",
+      "previewLink": "https://restaurant-example.com",
+      "githubLink": "https://github.com/user/restaurant-website",
+      "type": "HTMLCSS"
+    },
+    {
+      "id": 8,
+      "title": "Portfolio Showcase",
+      "image": "projectImage8.jpg",
+      "previewLink": "https://portfolio-showcase.com",
+      "githubLink": "https://github.com/user/portfolio-showcase",
+      "type": "WordPress"
+    },
+    {
+      "id": 9,
+      "title": "Task Manager App",
+      "image": "projectImage9.jpg",
+      "previewLink": "https://task-manager-app.com",
+      "githubLink": "https://github.com/user/task-manager-app",
+      "type": "React"
+    },
+    {
+      "id": 10,
+      "title": "Event Management Website",
+      "image": "projectImage10.jpg",
+      "previewLink": "https://event-management-example.com",
+      "githubLink": "https://github.com/user/event-management",
+      "type": "WordPress"
+    }
+  ]

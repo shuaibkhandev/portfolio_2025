@@ -1,0 +1,24 @@
+[
+    {
+      "companyName": "Rozi Academy",
+      "location": "Rawalpindi, Pakistan",
+      "position": "Web Developer",
+      "startDate": "15 Aug 2023",
+      "endDate": "31 March 2024"
+    },
+    {
+      "companyName": "K2X Tech",
+      "location": "KP, Pakistan",
+      "position": "Frontend Web Developer",
+      "startDate": "1 April 2024",
+      "endDate": "30 November 2024"
+    },
+    {
+      "companyName": "United Sol",
+      "location": "Islamabad, I-9/3",
+      "position": "Frontend Web Developer",
+      "startDate": "2 Dec 2024",
+      "endDate": "Present"
+    }
+  ]
+  
