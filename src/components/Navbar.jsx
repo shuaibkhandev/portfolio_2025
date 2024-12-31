@@ -9,7 +9,7 @@ const Navbar = ({darkMode}) => {
 
   return (
     <nav>
-      <ul  className={`flex ml-auto gap-[10px] justify-center items-center  border-2 rounded-lg w-[380px] py-[10px] px-[10px] ${darkMode ? "bg-[#21222A]" : "bg-white"}`}>
+      <ul  className={`hidden md:flex ml-auto gap-[10px] justify-center items-center  border-2 rounded-lg w-[380px] py-[10px] px-[10px] ${darkMode ? "bg-[#21222A]" : "bg-white"}`}>
         <li>
         <NavLink
   to="/"

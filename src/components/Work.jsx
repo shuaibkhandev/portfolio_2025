@@ -32,15 +32,23 @@ const {darkMode} = useOutletContext();
 
   return (
     <div
-    className={` container rounded-lg p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
+    className={` flex-1 rounded-lg p-[20px] md:p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
     >
-         <h1 className={`mb-[10px] relative text-[32px] before::content-[""] before:block before:w-[150px] before:h-[2px] before:bg-[#1877F2] before:mb-2 before:absolute before:left-[180px] before:top-[20px] ${darkMode ? "text-white" : ""}`}>
-        Work
-
-      </h1>
+           <div className="relative mb-4">
+        <h1
+          className={`text-[22px] md:text-[32px] font-bold ${
+            darkMode ? "text-white" : "text-black"
+          }`}
+        >
+          Work
+        </h1>
+        <span
+          className="absolute bottom-[25px]  left-[100px] h-[2px] w-[150px] bg-[#1877F2]"
+        ></span>
+      </div>
 
       <div>
-        <div className="flex justify-end gap-[20px]">
+        <div className="flex justify-end flex-wrap  gap-x-[20px] gap-y-[7px]">
           <Link className={`${currentType  === null ? `text-[#1877F2]` : darkMode ? "text-light-gray" : "text-gray-700"}  `}  to={genNewSearchParamsStr("type", null, searchParams)}>All</Link>
           <Link className={`${currentType  === "htmlcss" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "htmlcss", searchParams)}>HTML CSS</Link>
           <Link className={`${currentType  === "react" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "react")}>React</Link>
@@ -48,9 +56,9 @@ const {darkMode} = useOutletContext();
           <Link className={`${currentType  === "wordpress" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "wordpress", searchParams)}>Wordpress</Link>
         </div>
 
-        <div className="Projects grid grid-cols-2 gap-[20px] mt-[20px]">
+        <div className="Projects grid grid-cols-1 sm:grid-cols-2 gap-[20px] mt-[20px]">
           {displayedProjects?.map((project) => (
-            <div key={project.id} className={`project h-[190px] w-[350px] rounded-md  p-[10px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"}`}>
+            <div key={project.id} className={`project h-[190px] rounded-md  p-[10px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"}`}>
               <img
                 src={projectImage1}
                 alt={project.title}
