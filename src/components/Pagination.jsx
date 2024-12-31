@@ -21,7 +21,7 @@ const Pagination = ({darkMode , onPageChange, totalItems, itemsPerPage, currentP
 <div className="pagination flex items-center gap-[10px]">
 {/* Previous Button */}
 <button
-  className={`preview w-[35px] h-[35px] rounded-md  disabled:cursor-not-allowed flex items-center justify-center ${darkMode ? "bg-[#282D35]":"bg-[#d1d5db]"}`}
+  className={`preview w-[35px] h-[35px] rounded-md  disabled:cursor-not-allowed flex items-center justify-center ${darkMode ? "bg-dark-gray text-light-gray":"bg-[#d1d5db]"}`}
   disabled={currentPage === 1}
   onClick={() => handlePageChange(currentPage - 1)}
 >
@@ -35,7 +35,7 @@ const Pagination = ({darkMode , onPageChange, totalItems, itemsPerPage, currentP
     className={`w-[35px] h-[35px] rounded-md flex items-center justify-center ${
       currentPage === index + 1
         ? `bg-[#1877F2] text-white border-[#1877F2] border-2`
-        :` ${darkMode ? "bg-[#282D35]":"bg-[#EBF2FA]"}`
+        :` ${darkMode ? "bg-dark-gray text-light-gray":"bg-[#EBF2FA]"}`
     }`}
     onClick={() => handlePageChange(index + 1)}
   >

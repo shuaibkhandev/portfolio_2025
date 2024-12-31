@@ -62,3 +62,13 @@ strong {
 em {
   font-weight: 400;
 }
+
+.container{
+  width: calc(100% - 350px);
+
+}
+@media screen and (max-width: 1023px){
+  .container{
+    width: 100%;
+  }
+}

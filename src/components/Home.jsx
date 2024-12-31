@@ -8,8 +8,7 @@ const Home = () => {
   const {darkMode} = useOutletContext();
   return (
     <div
-      className={` rounded-lg p-[50px] ${darkMode ? "bg-dark-blue" : "bg-white"}`}
-      style={{ width: "calc(100% - 350px)" }}
+      className={` container rounded-lg p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
     >
       <div className="mb-[40px]">
         <h1 className={`mb-[10px] relative text-[32px] before::content-[""] before:block before:w-[150px] before:h-[2px] before:bg-[#1877F2] before:mb-2 before:absolute before:left-[180px] before:top-[20px] ${darkMode ? "text-white" : ""}`}>
@@ -24,7 +23,7 @@ const Home = () => {
       </div>
       <div className="mt-[20px]">
         <h2 className={`mb-[10px] text-[22px] font-semibold ${darkMode ? "text-white" : ""}`}>What I do!</h2>
-        <div className="grid grid-cols-2 gap-[20px] text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[20px] text-center">
           <div className={` rounded-md px-[10px] py-[20px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[5px]">
             <span className='text-[#1877F2] text-[22px]'>

@@ -32,26 +32,25 @@ const {darkMode} = useOutletContext();
 
   return (
     <div
-    className={` rounded-lg p-[50px] ${darkMode ? "bg-dark-blue text-white" : "bg-white"}`}
-      style={{ width: "calc(100% - 350px)" }}
+    className={` container rounded-lg p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
     >
-      <h1 className='mb-[10px] relative text-[32px] before::content-[""] before:block before:w-[150px] before:h-[2px] before:bg-[#1877F2] before:mb-2 before:absolute before:left-[95px] before:top-[25px]'>
+         <h1 className={`mb-[10px] relative text-[32px] before::content-[""] before:block before:w-[150px] before:h-[2px] before:bg-[#1877F2] before:mb-2 before:absolute before:left-[180px] before:top-[20px] ${darkMode ? "text-white" : ""}`}>
         Work
 
       </h1>
 
       <div>
         <div className="flex justify-end gap-[20px]">
-          <Link className={`${currentType  === null ? "text-[#1877F2]" : ""}  `}  to={genNewSearchParamsStr("type", null, searchParams)}>All</Link>
-          <Link className={`${currentType  === "htmlcss" ? "text-[#1877F2]" : ""}  `} to={genNewSearchParamsStr("type", "htmlcss", searchParams)}>HTML CSS</Link>
-          <Link className={`${currentType  === "react" ? "text-[#1877F2]" : ""}  `} to={genNewSearchParamsStr("type", "react")}>React</Link>
-          <Link className={`${currentType  === "mern" ? "text-[#1877F2]" : ""}  `} to={genNewSearchParamsStr("type", "mern", searchParams)}>MERN</Link>
-          <Link className={`${currentType  === "wordpress" ? "text-[#1877F2]" : ""}  `} to={genNewSearchParamsStr("type", "wordpress", searchParams)}>Wordpress</Link>
+          <Link className={`${currentType  === null ? `text-[#1877F2]` : darkMode ? "text-light-gray" : "text-gray-700"}  `}  to={genNewSearchParamsStr("type", null, searchParams)}>All</Link>
+          <Link className={`${currentType  === "htmlcss" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "htmlcss", searchParams)}>HTML CSS</Link>
+          <Link className={`${currentType  === "react" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "react")}>React</Link>
+          <Link className={`${currentType  === "mern" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"} `} to={genNewSearchParamsStr("type", "mern", searchParams)}>MERN</Link>
+          <Link className={`${currentType  === "wordpress" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "wordpress", searchParams)}>Wordpress</Link>
         </div>
 
         <div className="Projects grid grid-cols-2 gap-[20px] mt-[20px]">
           {displayedProjects?.map((project) => (
-            <div key={project.id} className={`project h-[190px] w-[350px] rounded-md  p-[10px] ${darkMode ? "bg-[#282D35] text-white" : "bg-[#EBF2FA]"}`}>
+            <div key={project.id} className={`project h-[190px] w-[350px] rounded-md  p-[10px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"}`}>
               <img
                 src={projectImage1}
                 alt={project.title}
