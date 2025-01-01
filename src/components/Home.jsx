@@ -33,7 +33,7 @@ const Home = () => {
       <div className="mt-[20px]">
         <h2 className={`mb-[10px] text-[18px] md:text-[22px] font-semibold ${darkMode ? "text-white" : ""}`}>What I do!</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[20px] text-center">
-          <div className={` rounded-md px-[6px] md:px-[10px] py-[20px] md:py-[20px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"} `}>
+          <div className={` rounded-md px-[10px] py-[20px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[2px] md:mb-[5px]">
             <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[22px]`}>
                 <IoCodeSlash />
