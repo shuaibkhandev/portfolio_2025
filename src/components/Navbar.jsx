@@ -8,7 +8,7 @@ import { useState } from "react";
 
 
 const Navbar = ({darkMode}) => {
-const [isOpen, setIsOpen] = useState(true);
+const [isOpen, setIsOpen] = useState(false);
 
 
 
