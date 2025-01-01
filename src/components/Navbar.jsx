@@ -15,7 +15,7 @@ const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
 
-<span onClick={()=> setIsOpen((isOpen)=>!isOpen)} className="bg-dark-gray w-[30px] h-[30px] rounded-sm flex justify-center items-center text-light-gray absolute right-[20px] top-[98px] sm:hidden">
+<span onClick={()=> setIsOpen((isOpen)=>!isOpen)} className={` w-[30px] h-[30px] rounded-sm flex justify-center items-center text-light-gray absolute right-[20px] top-[98px] sm:hidden ${darkMode ? "bg-dark-gray" : "bg-bright-blue"}`}>
   <RxHamburgerMenu/>
 </span>
 
