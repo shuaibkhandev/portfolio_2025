@@ -62,7 +62,7 @@ const Main = ({ darkMode }) => {
             <VscGithub />
           </a>
           <a
-            href="https://wa.me/03451399912?text=Hello!%20I%20am%20interested%20in%20connecting%20with%20you."
+            href="https://wa.me/3451399912?text=Hello!%20I%20am%20interested%20in%20connecting%20with%20you."
             target="_blank"
             className={` flex justify-center items-center text-[#1877F2]  rounded-md h-[32px] w-[32px] md:w-[40px] md:h-[40px] ${
               darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"
