@@ -32,7 +32,7 @@ const {darkMode} = useOutletContext();
 
   return (
     <div
-    className={` flex-1 rounded-lg p-[20px] md:p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
+    className={`rounded-lg p-[20px] md:p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
     >
            <div className="relative mb-4">
         <h1
@@ -43,7 +43,7 @@ const {darkMode} = useOutletContext();
           Work
         </h1>
         <span
-          className="absolute bottom-[25px]  left-[100px] h-[2px] w-[150px] bg-[#1877F2]"
+            className="absolute bottom-[18px] md:bottom-[28px] left-[70px] md:left-[180px] h-[2px] w-[95px] md:w-[150px] bg-[#1877F2]"
         ></span>
       </div>
 

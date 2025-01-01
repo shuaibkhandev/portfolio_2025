@@ -1,21 +1,31 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { TiDocumentText } from "react-icons/ti";
 import { MdWorkOutline } from "react-icons/md";
 import { TiContacts } from "react-icons/ti";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+
 
 const Navbar = ({darkMode}) => {
+const [isOpen, setIsOpen] = useState(true);
+
+
 
   return (
     <nav>
-      <ul  className={`hidden md:flex ml-auto gap-[10px] justify-center items-center  border-2 rounded-lg w-[380px] py-[10px] px-[10px] ${darkMode ? "bg-[#21222A]" : "bg-white"}`}>
+
+<span onClick={()=> setIsOpen((isOpen)=>!isOpen)} className="bg-dark-gray w-[30px] h-[30px] rounded-sm flex justify-center items-center text-light-gray absolute right-[20px] top-[98px] sm:hidden">
+  <RxHamburgerMenu/>
+</span>
+
+      <ul  className={`z-10 ${isOpen ? "flex" : "hidden"} fixed flex-col sm:flex-row sm:static sm:flex ml-auto gap-[10px] justify-center items-center  border-2 rounded-lg sm:w-[380px] py-[10px] px-[10px] ${darkMode ? "bg-[#21222A]" : "bg-white"}`}>
         <li>
         <NavLink
   to="/"
   className={({ isActive }) =>
     `p-2 flex w-[80px] flex-col items-center justify-center rounded-lg text-[14px] 
-     ${isActive ? (darkMode ? "bg-[#3E64FF] text-white" : "bg-[#3E64FF] text-white") 
+     ${isActive ? (darkMode ? "bg-bright-blue text-white" : "bg-bright-blue text-white") 
                 : (darkMode ? "bg-[#282D35] text-white" : "bg-[#EBF2FA] text-gray-700")}`
   }
 >
@@ -30,7 +40,7 @@ const Navbar = ({darkMode}) => {
             to="resume"
             className={({ isActive }) =>
               `p-2 flex w-[80px] flex-col items-center justify-center rounded-lg text-[14px] 
-               ${isActive ? (darkMode ? "bg-[#3E64FF] text-white" : "bg-[#3E64FF] text-white") 
+               ${isActive ? (darkMode ? "bg-bright-blue text-white" : "bg-bright-blue text-white") 
                           : (darkMode ? "bg-[#282D35] text-white" : "bg-[#EBF2FA] text-gray-700")}`
             }
           >
@@ -45,7 +55,7 @@ const Navbar = ({darkMode}) => {
             to="work"
             className={({ isActive }) =>
               `p-2 flex w-[80px] flex-col items-center justify-center rounded-lg text-[14px] 
-               ${isActive ? (darkMode ? "bg-[#3E64FF] text-white" : "bg-[#3E64FF] text-white") 
+               ${isActive ? (darkMode ? "bg-bright-blue text-white" : "bg-bright-blue text-white") 
                           : (darkMode ? "bg-[#282D35] text-white" : "bg-[#EBF2FA] text-gray-700")}`
             }
           >
@@ -60,7 +70,7 @@ const Navbar = ({darkMode}) => {
             to="contact"
             className={({ isActive }) =>
               `p-2 flex w-[80px] flex-col items-center justify-center rounded-lg text-[14px] 
-               ${isActive ? (darkMode ? "bg-[#3E64FF] text-white" : "bg-[#3E64FF] text-white") 
+               ${isActive ? (darkMode ? "bg-bright-blue text-white" : "bg-bright-blue text-white") 
                           : (darkMode ? "bg-[#282D35] text-white" : "bg-[#EBF2FA] text-gray-700")}`
             }
           >

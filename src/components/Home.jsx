@@ -35,7 +35,7 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[20px] text-center">
           <div className={` rounded-md px-[6px] md:px-[10px] py-[15px] md:py-[20px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[2px] md:mb-[5px]">
-            <span className='text-[#1877F2] text-[22px]'>
+            <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[22px]`}>
                 <IoCodeSlash />
               </span>
               <h3 className={`font-semibold text-[12px] md:text-[14px] ${darkMode ? "text-white" : ""}`}>
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
           <div className={` rounded-md px-[6px] md:px-[10px] py-[15px] md:py-[20px]  ${darkMode ? "bg-dark-gray" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[2px] md:mb-[5px]">
-            <span className='text-[#1877F2] text-[22px]'>
+            <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[22px]`}>
                 <FaLaptopCode />
               </span>
               <h3 className={`font-semibold text-[12px] md:text-[14px] ${darkMode ? "text-white" : ""}`}>
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
           <div className={` rounded-md px-[6px] md:px-[10px] py-[15px] md:py-[20px]  ${darkMode ? "bg-dark-gray" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[2px] md:mb-[5px]">
-            <span className='text-[#1877F2] text-[22px]'>
+            <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[22px]`}>
                 <IoCodeWorkingSharp />
               </span>
               <h3 className={`font-semibold text-[12px] md:text-[14px] ${darkMode ? "text-white" : ""}`}>Backend Development</h3>
@@ -78,7 +78,7 @@ const Home = () => {
           </div>
           <div className={`rounded-md px-[6px] md:px-[10px] py-[15px] md:py-[20px]  ${darkMode ? "bg-dark-gray" : "bg-[#EBF2FA]"} `}>
             <div className="flex items-center justify-center gap-[5px] mb-[2px] md:mb-[5px]">
-            <span className='text-[#1877F2] text-[22px]'>
+            <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[22px]`}>
                 <BiCodeCurly />
               </span>
               <h3 className={`font-semibold text-[12px] md:text-[14px] ${darkMode ? "text-white" : ""}`}>

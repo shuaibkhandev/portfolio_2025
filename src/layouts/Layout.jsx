@@ -17,7 +17,7 @@ const Layout = () => {
   }
 
   return (
-    <div className="w-[95%] md:w-[90%] m-auto">
+    <div className=" w-[95%] md:w-[90%] m-auto">
     <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Navbar darkMode={darkMode} />
       <div className="flex gap-[10px] flex-col mt-[10px] mb-[50px] sm:flex-col lg:flex-row md:flex-col">

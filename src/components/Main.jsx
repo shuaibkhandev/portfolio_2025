@@ -7,6 +7,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoDownloadOutline } from "react-icons/io5";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import CV from "../assets/Shuaib_CV.pdf"
 
 const Main = ({ darkMode }) => {
   return (
@@ -161,21 +162,23 @@ const Main = ({ darkMode }) => {
           </div>
         </div>
         <div className="py-[10px] flex justify-center items-center mt-[10px]">
-          <button
+          <a
+          href={CV} 
+          target="_blank" 
             className={`flex text-[15px] gap-[5px] items-center justify-center bg-[#1877F2] text-white rounded-full py-[10px] px-[14px] ${
               darkMode ? "bg-dark-gray" : ""
             } `}
           >
-            {" "}
+            
             <span
               className={`text-[20px] ${
                 darkMode ? "text-gray-medium" : "text-white"
               }`}
             >
               <IoDownloadOutline />
-            </span>{" "}
+            </span>
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </main>

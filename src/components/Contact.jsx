@@ -25,14 +25,14 @@ const Contact = () => {
       </div>
       <div className='flex justify-between flex-col  gap-[20px] md:gap-[50] sm:gap-[50] lf:gap-[50] md:flex-row sm:flex-row lg:flex-row'>
       <div className={` rounded-lg space-y-[2px] px-[10px] py-[10px] flex-1 min-h-[100px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}>
-                <h4 className={`text-gray-600 text-[14px] flex gap-[5px] items-center ${darkMode?"text-light-gray":""}`}>  <span className='text-[#1877F2] text-[22px]'><MdOutlinePhoneInTalk /></span>  Phone:</h4>
+                <h4 className={`text-gray-600 text-[14px] flex gap-[5px] items-center ${darkMode?"text-light-gray":""}`}>  <span className={`text-[22px] ${darkMode ? "text-gray-medium" : "text-bright-blue"}`}><MdOutlinePhoneInTalk /></span>  Phone:</h4>
                 <div className='px-[40px]'>
                 <p className={`text-[14px] ${darkMode?"text-light-gray":""}`}>+92 3481921015</p>
                 <p className={`text-[14px] ${darkMode?"text-light-gray":""}`}>+92 3451399912</p>
                 </div>
               </div>
               <div className={` rounded-lg space-y-[2px] px-[10px] py-[10px] flex-1 min-h-[100px] ${darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"}`}>
-              <h4 className={`text-gray-600 text-[14px] flex gap-[5px] items-center ${darkMode?"text-light-gray":""}`}>  <span className='text-[#1877F2] text-[22px]'><MdOutlineMarkEmailUnread /></span> Email:</h4>
+              <h4 className={`text-gray-600 text-[14px] flex gap-[5px] items-center ${darkMode?"text-light-gray":""}`}>   <span className={`text-[22px] ${darkMode ? "text-gray-medium" : "text-bright-blue"}`}><MdOutlineMarkEmailUnread /></span> Email:</h4>
               <div className='px-[40px]'>
                 <p className={`text-[14px] ${darkMode?"text-light-gray":""}`}>skhan.csit@gmail.com</p>
                 </div>
@@ -57,7 +57,7 @@ partnerships </b> and more so <b className='font-medium'> mentorship.</b> </p>
       <input type="text"className={` pl-[40px] border-b-2 leading-4 md:leading-6 text-[14px] md:text-[16px] outline-none ${darkMode ? "bg-dark-gray border-b-[#21222A] text-gray-300":"bg-[#EBF2FA]"}`}  />
     </div>
 <div>
-    <button className='border-2  border-[#1877F2] px-[15px] py-[5px] text-[14px] font-medium md:text-[18px] rounded-full flex gap-[5px]'> Send <span className='text-[#1877F2] text-[16px] md:text-[22px]'><FiSend/></span></button>
+    <button className={`border-2  border-bright-blue px-[15px] ${darkMode ? "text-gray-medium  border-gray-medium" : "text-dark-gray border-bright-blue"} py-[5px] text-[14px] font-medium md:text-[18px] rounded-full flex gap-[5px]`}> Send <span className={`${darkMode ? "text-gray-medium" : "text-bright-blue"} text-[16px] md:text-[22px]`}><FiSend/></span></button>
     </div>
   </form>
 </div>

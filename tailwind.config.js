@@ -8,7 +8,7 @@ export default {
         "gray-medium": "#93949e",
         "dark-blue": "#0a0a23",
         "dark-gray": "#313146",
-        "bright-blue": "#0088cc",
+        "bright-blue": "#3E64FF",
       },
       fontFamily: {
         "open-sans-condensed": ['"Open Sans Condensed"', "sans-serif"],
