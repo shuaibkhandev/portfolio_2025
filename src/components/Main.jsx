@@ -35,7 +35,8 @@ const Main = ({ darkMode }) => {
 
         <div className="flex gap-[7px] md:gap-[10px] mt-[5px] md:mt-[10px]">
           <a
-            href=""
+            href="https://www.facebook.com/shuaibdev"
+              target="_blank"
             className={` flex justify-center items-center text-[#1877F2]  rounded-md h-[32px] w-[32px] md:w-[40px] md:h-[40px] ${
               darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"
             }`}
@@ -43,7 +44,8 @@ const Main = ({ darkMode }) => {
             <FaFacebookF />
           </a>
           <a
-            href=""
+            href="https://www.linkedin.com/in/shuaibdev/"
+              target="_blank"
             className={` flex justify-center items-center text-[#1877F2]  rounded-md h-[32px] w-[32px] md:w-[40px] md:h-[40px] ${
               darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"
             }`}
@@ -51,7 +53,8 @@ const Main = ({ darkMode }) => {
             <FaLinkedinIn />
           </a>
           <a
-            href=""
+            href="https://github.com/shuaibkhandev"
+              target="_blank"
             className={` flex justify-center items-center text-[#1877F2]  rounded-md h-[32px] w-[32px] md:w-[40px] md:h-[40px] ${
               darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"
             }`}
@@ -59,7 +62,8 @@ const Main = ({ darkMode }) => {
             <VscGithub />
           </a>
           <a
-            href=""
+            href="https://wa.me/03451399912?text=Hello!%20I%20am%20interested%20in%20connecting%20with%20you."
+            target="_blank"
             className={` flex justify-center items-center text-[#1877F2]  rounded-md h-[32px] w-[32px] md:w-[40px] md:h-[40px] ${
               darkMode ? "bg-dark-gray text-light-gray" : "bg-[#EBF2FA]"
             }`}
