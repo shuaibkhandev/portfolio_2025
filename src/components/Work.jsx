@@ -56,8 +56,9 @@ const {darkMode} = useOutletContext();
           <Link className={`${currentType  === "wordpress" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "wordpress", searchParams)}>Wordpress</Link>
         </div>
 
+        {displayedProjects.length > 0 ?
         <div className="Projects grid grid-cols-1 sm:grid-cols-2 gap-[20px] mt-[20px]">
-          {displayedProjects?.map((project) => (
+         { displayedProjects?.map((project) => (
             <div key={project.id} className={`project h-[190px] rounded-md  p-[10px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"}`}>
               <img
                 src={projectImage1}
@@ -82,11 +83,23 @@ const {darkMode} = useOutletContext();
                 </div>
               </div>
             </div>
-          ))}
+          ))}  
+         
         </div>
+        : <div> <h1 className={`${darkMode ? "text-gray-medium" : "text-dark-gray"} text-center mt-20 `}>No Projects Available 🤦‍♀️</h1> </div>}
 
         <div className="mt-[30px] flex justify-center">
-          <Pagination darkMode={darkMode} onPageChange = {handlePageChange} totalItems={filteredProjects.length} itemsPerPage={ITEMS_PER_PAGE} currentPage={currentPage} />
+        {filteredProjects.length > ITEMS_PER_PAGE && (
+          <div className="mt-[30px] flex justify-center">
+            <Pagination
+              darkMode={darkMode}
+              onPageChange={handlePageChange}
+              totalItems={filteredProjects.length}
+              itemsPerPage={ITEMS_PER_PAGE}
+              currentPage={currentPage}
+            />
+          </div>
+        )}
         </div>
       </div>
     </div>

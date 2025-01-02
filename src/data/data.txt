@@ -1,0 +1,9 @@
+format for data of project  
+  {
+      "id": 1,
+      "title": "Portfolio Website",
+      "image": "projectImage1.jpg",
+      "previewLink": "https://portfolio-example.com",
+      "githubLink": "https://github.com/user/portfolio-website",
+      "type": "React"
+    }
