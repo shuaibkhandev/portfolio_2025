@@ -48,7 +48,7 @@ const {darkMode} = useOutletContext();
       </div>
 
       <div>
-        <div className="flex justify-end flex-wrap  gap-x-[20px] gap-y-[7px]">
+        <div className="flex sm:justify-end justify-start flex-wrap  gap-x-[20px] gap-y-[7px]">
           <Link className={`${currentType  === null ? `text-[#1877F2]` : darkMode ? "text-light-gray" : "text-gray-700"}  `}  to={genNewSearchParamsStr("type", null, searchParams)}>All</Link>
           <Link className={`${currentType  === "htmlcss" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "htmlcss", searchParams)}>HTML CSS</Link>
           <Link className={`${currentType  === "react" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "react")}>React</Link>
