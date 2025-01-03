@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="work" element={<Work/>} />
           <Route path="contact" element={<Contact/>} />
         </Route>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </BrowserRouter>
   );
