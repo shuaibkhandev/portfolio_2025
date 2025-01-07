@@ -30,7 +30,7 @@ const Contact = () => {
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-        alert("Thanks to connect with me");
+        alert("Thanks to connected with me");
         console.log("Email sent successfully!", response);
         setName("");
         setEmail("");
