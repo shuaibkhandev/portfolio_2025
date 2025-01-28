@@ -26,7 +26,7 @@ const Home = () => {
         <p className={`text-[14px] md:text-[16px] ${darkMode ? " text-light-gray" : ""} `}>
           I am a Web Developer. I graduated with a Bachelor’s degree in Computer
           Science, specializing in MERN Stack Development. I have previously
-          worked at ROZI ACADEMY as a Web Developer developer, and I currently
+          worked at ROZI ACADEMY as a Web developer, and I currently
           work as a frontend React developer at K2x Tech.
         </p>
       </div>
