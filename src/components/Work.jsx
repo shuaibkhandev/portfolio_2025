@@ -77,7 +77,7 @@ const {darkMode} = useOutletContext();
                   </Link>
                   <Link
                     to={project.githubLink}
-                    className="text-[14px] text-[#1877F2]"
+                    className="text-[14px] text-[#1877F2] cursor-not-allowed"
                   >
                     Github
                   </Link>
