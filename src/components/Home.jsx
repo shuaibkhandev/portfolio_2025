@@ -3,14 +3,19 @@ import { IoCodeSlash, IoCodeWorkingSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 import { BiCodeCurly } from "react-icons/bi";
 import { useOutletContext } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
-    useEffect(()=>{
-      document.title = "Portfolio - Home"
-    },[])
+
     
   const { darkMode } = useOutletContext();
   return (
+    <>
+    <Helmet>
+  <title>Shuaib Khan - MERN Stack & WordPress Developer</title>
+  <meta name="description" content="Welcome to Shuaib Khan's portfolio! A MERN stack and WordPress developer specializing in React, Node.js, and custom web solutions. Explore my work and expertise." />
+</Helmet>
+
     <div
       className={` rounded-lg p-[20px] md:p-[50px] md:w-full ${
         darkMode ? "bg-dark-blue" : "bg-white"
@@ -172,6 +177,7 @@ integration
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -4,12 +4,11 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import { useOutletContext } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
 
-  useEffect(()=>{
-    document.title = "Portfolio - Contact Me"
-  },[])
+
   
   const { darkMode } = useOutletContext();
   const [name, setName] = useState("");
@@ -47,6 +46,12 @@ const Contact = () => {
   };
 
   return (
+    <>
+   <Helmet>
+  <title>Shuaib - Contact Me</title>
+  <meta name="description" content="Get in touch with Shuaib Khan, a MERN stack and WordPress developer. Let's discuss your project or collaboration. Contact me today!"/>
+</Helmet>
+
     <div
       className={`rounded-lg p-[20px] md:p-[50px] md:w-full ${
         darkMode ? "bg-dark-blue" : "bg-white"
@@ -211,6 +216,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

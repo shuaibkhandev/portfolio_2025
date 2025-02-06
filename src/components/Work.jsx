@@ -5,6 +5,7 @@ import Pagination from "./Pagination";
 import projectData from "../data/projects.json";
 import { genNewSearchParamsStr } from '../utils/searchParams';
   import { useOutletContext } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ITEMS_PER_PAGE = 4;
 
@@ -14,9 +15,7 @@ const Work = () => {
   const currentType = searchParams.get("type") || null;
 const {darkMode} = useOutletContext();
 
-  useEffect(()=>{
-    document.title = "Portfolio - My Work"
-  },[])
+
 
   const filteredProjects = currentType
     ? projectData.filter((project) => project.type.toLowerCase() === currentType)
@@ -35,6 +34,11 @@ const {darkMode} = useOutletContext();
  
 
   return (
+    <>
+    <Helmet>
+    <title>Shuaib Khan's Portfolio - Web Development Projects</title>
+    <meta name="description" content="Explore Shuaib Khan's portfolio of web development projects. As a MERN stack and WordPress developer, Shuaib creates innovative and responsive websites and applications." />
+</Helmet>
     <div
     className={`rounded-lg p-[20px] md:p-[50px] md:w-full ${darkMode ? "bg-dark-blue" : "bg-white"}`}
     >
@@ -108,6 +112,7 @@ const {darkMode} = useOutletContext();
         </div>
       </div>
     </div>
+    </>
   );
 };
 

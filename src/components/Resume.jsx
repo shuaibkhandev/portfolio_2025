@@ -4,12 +4,11 @@ import { RiGraduationCapLine } from "react-icons/ri";
 import Pagination from "./Pagination";
 import experiences from "../data/experience.json";
 import { useOutletContext } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const ITEMS_PER_PAGE = 2;
 
 const Resume = () => {
-    useEffect(()=>{
-      document.title = "Portfolio - Resume"
-    },[])
+
 
 
   const [currentPage, setCurrentPage] = React.useState(1);
@@ -28,6 +27,13 @@ const Resume = () => {
   };
 
   return (
+    <>
+<Helmet>
+  <title>Shuaib Khan - Resume</title>
+  <meta name="description" content="Explore Shuaib Khan's professional resume. Learn about his experience, skills, and projects as a MERN stack and WordPress developer." />
+</Helmet>
+
+
     <section
       className={` rounded-lg p-[20px] md:p-[50px] md:w-full ${
         darkMode ? "bg-dark-blue" : "bg-white"
@@ -215,6 +221,7 @@ const Resume = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
