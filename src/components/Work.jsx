@@ -36,7 +36,7 @@ const {darkMode} = useOutletContext();
   return (
     <>
     <Helmet>
-    <title>Shuaib Khan's Portfolio - Web Development Projects</title>
+    <title>Shuaib Khan - Portfolio</title>
     <meta name="description" content="Explore Shuaib Khan's portfolio of web development projects. As a MERN stack and WordPress developer, Shuaib creates innovative and responsive websites and applications." />
 </Helmet>
     <div

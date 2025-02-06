@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <>
    <Helmet>
-  <title>Shuaib - Contact Me</title>
+  <title>Shuaib - Contact</title>
   <meta name="description" content="Get in touch with Shuaib Khan, a MERN stack and WordPress developer. Let's discuss your project or collaboration. Contact me today!"/>
 </Helmet>
 

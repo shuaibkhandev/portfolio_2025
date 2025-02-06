@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     <Helmet>
-  <title>Shuaib Khan - MERN Stack & WordPress Developer</title>
+  <title>Shuaib Khan - Home</title>
   <meta name="description" content="Welcome to Shuaib Khan's portfolio! A MERN stack and WordPress developer specializing in React, Node.js, and custom web solutions. Explore my work and expertise." />
 </Helmet>
 
