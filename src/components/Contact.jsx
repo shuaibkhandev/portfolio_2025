@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
@@ -6,6 +6,11 @@ import { useOutletContext } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+  useEffect(()=>{
+    document.title = "Portfolio - Contact Me"
+  },[])
+  
   const { darkMode } = useOutletContext();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -188,7 +193,7 @@ const Contact = () => {
             <button
               className={`border-2  border-bright-blue px-[15px] ${
                 darkMode
-                  ? "text-gray-medium  border-gray-medium"
+                  ? "text-light-gray  border-light-gray"
                   : "text-dark-gray border-bright-blue"
               } py-[5px] text-[14px] font-medium md:text-[18px] rounded-full flex gap-[5px]`}
             >
@@ -196,7 +201,7 @@ const Contact = () => {
               Send{" "}
               <span
                 className={`${
-                  darkMode ? "text-gray-medium" : "text-bright-blue"
+                  darkMode ? "text-light-gray" : "text-bright-blue"
                 } text-[16px] md:text-[22px]`}
               >
                 <FiSend />

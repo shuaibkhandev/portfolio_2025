@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoCodeSlash, IoCodeWorkingSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 import { BiCodeCurly } from "react-icons/bi";
 import { useOutletContext } from "react-router-dom";
 
 const Home = () => {
+    useEffect(()=>{
+      document.title = "Portfolio - Home"
+    },[])
+    
   const { darkMode } = useOutletContext();
   return (
     <div

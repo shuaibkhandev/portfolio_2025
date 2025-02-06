@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import projectImage1 from "../assets/project_1.jpg";
 import { Link, NavLink, useSearchParams } from "react-router-dom";
 import Pagination from "./Pagination";
@@ -13,6 +13,10 @@ const Work = () => {
   const [currentPage, setCurrentPage] = React.useState(1);
   const currentType = searchParams.get("type") || null;
 const {darkMode} = useOutletContext();
+
+  useEffect(()=>{
+    document.title = "Portfolio - My Work"
+  },[])
 
   const filteredProjects = currentType
     ? projectData.filter((project) => project.type.toLowerCase() === currentType)

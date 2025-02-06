@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PiBagLight } from "react-icons/pi";
 import { RiGraduationCapLine } from "react-icons/ri";
 import Pagination from "./Pagination";
@@ -7,6 +7,11 @@ import { useOutletContext } from "react-router-dom";
 const ITEMS_PER_PAGE = 2;
 
 const Resume = () => {
+    useEffect(()=>{
+      document.title = "Portfolio - Resume"
+    },[])
+
+
   const [currentPage, setCurrentPage] = React.useState(1);
   const { darkMode } = useOutletContext();
 
