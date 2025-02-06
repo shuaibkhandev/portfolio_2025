@@ -48,27 +48,28 @@ const {darkMode} = useOutletContext();
       </div>
 
       <div>
-        <div className="flex sm:justify-end justify-start flex-wrap  gap-x-[20px] gap-y-[7px]">
+        {/* <div className="flex sm:justify-end justify-start flex-wrap  gap-x-[20px] gap-y-[7px]">
           <Link className={`${currentType  === null ? `text-[#1877F2]` : darkMode ? "text-light-gray" : "text-gray-700"}  `}  to={genNewSearchParamsStr("type", null, searchParams)}>All</Link>
           <Link className={`${currentType  === "htmlcss" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "htmlcss", searchParams)}>HTML CSS</Link>
           <Link className={`${currentType  === "react" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "react")}>React</Link>
           <Link className={`${currentType  === "mern" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"} `} to={genNewSearchParamsStr("type", "mern", searchParams)}>MERN</Link>
           <Link className={`${currentType  === "wordpress" ? "text-[#1877F2]" :  darkMode ? "text-light-gray" : "text-gray-700"}  `} to={genNewSearchParamsStr("type", "wordpress", searchParams)}>Wordpress</Link>
-        </div>
+        </div> */}
 
         {displayedProjects.length > 0 ?
         <div className="Projects grid grid-cols-1 sm:grid-cols-2 gap-[20px] mt-[20px]">
          { displayedProjects?.map((project) => (
             <div key={project.id} className={`project h-[190px] rounded-md  p-[10px] ${darkMode ? "bg-dark-gray text-white" : "bg-[#EBF2FA]"}`}>
               <img
-                src={projectImage1}
+                src={project.image}
                 alt={project.title}
-                className="h-[120px] w-full rounded-md"
+                className="h-[120px] w-full rounded-md bg-white max-w-[100%] object-center object-contain"
               />
               <div className="info mt-[10px]">
                 <h5 className="text-[14px] font-medium">{project.title}</h5>
                 <div className="flex justify-between items-center">
                   <Link
+                  target="_blank"
                     to={project.previewLink}
                     className="text-[14px] text-[#1877F2]"
                   >

@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Organization Website",
+    "previewLink": "https://roziacademy.com/",
+    "githubLink": "",
+    "image": "https://roziacademy.com/wp-content/uploads/2023/11/cropped-4e9e5e_71ed116d20ec41b0a0b30b2ef6f06890mv2-1.png"
+  },
+
+  {
+    "id": 2,
+    "title": "Organization Website",
+    "previewLink": "https://k2x.tech/",
+    "githubLink": "",
+    "image": "https://k2x.tech/wp-content/uploads/2024/09/K2X-logo.svg"
+  },
+
+  {
+    "id": 3,
+    "title": "Find Danish Companies & Business Data",
+    "previewLink": "https://genihunt.com/",
+    "githubLink": "",
+    "image": "https://genihunt.com/assets/logo-29f14fd7.svg"
+  }
+,
+  {
+    "id": 4,
+    "title": "Discover Exclusive Perfumes",
+    "previewLink": "https://parfumeriehub.com/",
+    "githubLink": "",
+    "image": "https://parfumeriehub.com/wp-content/uploads/2024/08/cropped-WhatsApp-Image-2024-08-13-at-4.33.27-PM-e1724222649665.jpeg"
+  }
+  ,
+  {
+    "id": 5,
+    "title": "PrestaShop Modules & Addons",
+    "previewLink": "https://www.fmemodules.com/",
+    "githubLink": "",
+    "image": "https://www.fmemodules.com/img/fme-modules-logo-1617875389.webp" 
+  }
+,
+  {
+    "id": 6,
+    "title": "Organization Website",
+    "previewLink": "https://sez.digital",
+    "githubLink": "",
+    "image": "https://sez.digital/wp-content/uploads/2024/11/output-onlinepngtools.png" 
+  }
+
+]

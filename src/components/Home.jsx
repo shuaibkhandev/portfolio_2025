@@ -28,12 +28,9 @@ const Home = () => {
             darkMode ? " text-light-gray" : ""
           } `}
         >
-          I am a Web Developer with a Bachelor's degree in Computer Science,
-          specializing in MERN Stack Development. I previously worked at ROZI
-          ACADEMY as a Web Developer and later joined K2x Tech as a Frontend
-          React Developer. Currently, I am working as a Frontend Developer at
-          United Sol, where I continue to build interactive and scalable web
-          applications.
+         Web Developer with one plus year of experience specializing in the MERN stack. Proficient in creating dynamic and
+responsive web applications using React. Skilled in both front-end and back-end development, from design to
+integration
         </p>
       </div>
       <div className="mt-[20px]">
