@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 
 const Layout = () => {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState(false);
 
    React.useEffect(()=>{
     document.body.style.backgroundColor = darkMode ? "#313146" : "#EBF2FA"
