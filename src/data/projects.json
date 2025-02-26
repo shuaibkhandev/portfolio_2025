@@ -37,6 +37,13 @@
     "previewLink": "https://sez.digital",
     "githubLink": "",
     "image": "https://sez.digital/wp-content/uploads/2024/11/output-onlinepngtools.png" 
+  },
+  {
+    "id": 7,
+    "title": "Search Module",
+    "previewLink": "https://html-css-js-search-dropdown.vercel.app/",
+    "githubLink": "https://github.com/shuaibkhandev/html-css-js-search-dropdown",
+    "image": "./search.webp" 
   }
 
 ]
