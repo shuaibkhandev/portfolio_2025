@@ -74,12 +74,12 @@ const Main = ({ darkMode }) => {
       </div>
 
       <div
-        className={` rounded-lg w-full hidden lg:block xl:block  mt-[20px] px-[10px]F py-[20px] mb-[20px]${
+        className={` rounded-lg w-full  lg:block xl:block  xl:mt-[20px] px-[10px] lg:py-[20px] mb-[20px]${
           darkMode ? "bg-[#21222A]" : "bg-[#EBF2FA]"
         } `}
       >
         <div
-          className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
+          className={`lg:flex hidden items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
             darkMode ? "border-[#282D35]" : ""
           }`}
         >
@@ -108,7 +108,7 @@ const Main = ({ darkMode }) => {
           </div>
         </div>
         <div
-          className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
+          className={`lg:flex hidden items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
             darkMode ? "border-[#282D35]" : ""
           }`}
         >
@@ -137,7 +137,7 @@ const Main = ({ darkMode }) => {
           </div>
         </div>
         <div
-          className={`flex items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
+          className={`lg:flex hidden items-center border-b-2 gap-[5px] px-[5px] py-[10px] ${
             darkMode ? "border-[#282D35]" : ""
           }`}
         >
@@ -165,7 +165,7 @@ const Main = ({ darkMode }) => {
             </span>
           </div>
         </div>
-        <div className="py-[10px] flex justify-center items-center mt-[10px]">
+        <div className="py-[10px] flex justify-center items-center xl:mt-[10px]">
           <a
           href={CV} 
           target="_blank" 
