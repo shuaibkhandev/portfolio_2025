@@ -37,7 +37,7 @@ const Home = () => {
             darkMode ? " text-light-gray" : ""
           } `}
         >
-         Web Developer with one plus year of experience specializing in the MERN stack. Proficient in creating dynamic and
+         Web Developer with two years of experience specializing in the MERN stack. Proficient in creating dynamic and
 responsive web applications using React. Skilled in both front-end and back-end development, from design to
 integration
         </p>
